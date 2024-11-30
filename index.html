@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download V O I D A G O N zip</title>
+    <title>Download VOIDAGON XYZ</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -123,27 +123,34 @@
         }
         .tutorial-content {
             display: flex;
-            justify-content: center; /* Centers the iframe horizontally */
-            align-items: center;     /* Centers the iframe vertically */
-            height: 80vh;            /* You can adjust the height as needed */
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
         }
-
         .tutorial-content iframe {
-            width: 80vw;  /* Adjust the width to fit within the viewport */
-            height: 80vh; /* Adjust the height to fit within the viewport */
+            width: 80vw;
+            height: 80vh;
             border: none;
         }
-
         .tutorial-content video {
             width: 80%;
             height: 80vh;
+        }
+        .xyz {
+            color: green;
+        }
+        .xyz .blue {
+            color: blue;
+        }
+        .xyz .red {
+            color: red;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Download VOIDAGON</h1>
+        <h1>Download VOIDAGON <span class="xyz"><span>X </span><span class="blue">Y </span><span class="red">Z</span></span></h1>
         <a href="https://github.com/FunMathForKids/fun-school-math/releases/download/1.1/math-games-for-yr7-to-yr11.zip" class="download-btn" download>Download</a>
         <button class="tutorial-btn" id="tutorial-btn">Tutorial</button>
         <footer>
@@ -155,7 +162,9 @@
         <p>40+ games so far, all undetected! + they all have disguised names.</p>
         <p>Some folders will have a text file named "Math Vocab". They say the names of the games in it cuz the things shown are like PacMath for example, and the vocab thing shows you PacMath = Pacman.</p>
         <p>btw there might look like 20 games or smth but go to the "More" and "even more" folders.</p>
-        <p>Fun fact: If you wanna know how to say Voidagon just say hexagon and replace the hex with Void. the name Voidagon was chosen because Void + Hexagon = Voidagon. </p>
+        <p>Fun fact: If you wanna know how to say VOIDAGON <span class="xyz"><span>X </span><span class="blue">Y </span><span class="red">Z</span></span> just say hexagon and replace the hex with Void.</p>
+        <p>The name VOIDAGON <span class="xyz"><span>X </span><span class="blue">Y </span><span class="red">Z</span></span> was chosen because Void + Hexagon + <span class="xyz"><span>X </span><span class="blue">Y </span><span class="red">Z</span></span> = VOIDAGON     <span class="xyz"><span>X </span><span class="blue">Y </span><span class="red">Z</span></span>
+        (the <span class="xyz"><span>X</span><span class="blue">Y</span><span class="red">Z</span></span> is because it looks cool lol)</p>
         <p>btw if you came here for math games....</p>
         <p class="big-text">YOU MIGHT AS WELL <span style="color: red; font-weight: bold;">GET OUT!!!!!!!!</span></p>
     </div>
@@ -172,7 +181,7 @@
     </div>
 
     <script>
-        // Show tutorial modal
+        // JavaScript for tutorial modal functionality remains unchanged
         const tutorialBtn = document.getElementById('tutorial-btn');
         const tutorialModal = document.getElementById('tutorial-modal');
         const closeBtn = document.getElementById('close-btn');
@@ -181,27 +190,20 @@
         const tutorialContent = document.getElementById('tutorial-content');
 
         tutorialBtn.addEventListener('click', () => {
-            console.log("Tutorial button clicked"); // Debugging log
             tutorialModal.style.display = 'flex';
         });
 
-        // Close tutorial modal
         closeBtn.addEventListener('click', () => {
-            console.log("Close button clicked"); // Debugging log
             tutorialModal.style.display = 'none';
-            tutorialContent.innerHTML = ''; // Clear content
+            tutorialContent.innerHTML = '';
         });
 
-        // Show PDF for image tutorial
         imageTutorialBtn.addEventListener('click', () => {
-            console.log("Image tutorial button clicked"); // Debugging log
             tutorialContent.innerHTML = '<iframe src="tui.pdf" frameborder="0"></iframe>';
             tutorialContent.style.display = 'block';
         });
 
-        // Show video for video tutorial
         videoTutorialBtn.addEventListener('click', () => {
-            console.log("Video tutorial button clicked"); // Debugging log
             tutorialContent.innerHTML = '<video controls><source src="tui.webm" type="video/webm">Your browser does not support the video tag.</video>';
             tutorialContent.style.display = 'block';
         });
